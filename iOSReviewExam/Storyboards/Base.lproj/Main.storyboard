@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="iOSReviewExam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTw-eo-AQn">
+                                <rect key="frame" x="0.0" y="5" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VEm-VN-BDV">
+                                <rect key="frame" x="0.0" y="5" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riH-yL-yrB">
+                                <rect key="frame" x="164.5" y="814" width="85" height="30"/>
+                                <state key="normal" title="Take Picture"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Mq-L0-aTN">
+                                <rect key="frame" x="46" y="804" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6Mq-L0-aTN" secondAttribute="height" multiplier="1:1" id="FDB-J0-AOt"/>
+                                    <constraint firstAttribute="width" constant="50" id="tU5-E2-fgq"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hOa-Nq-tce">
+                                <rect key="frame" x="314.5" y="804" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="1nM-n7-IOQ"/>
+                                    <constraint firstAttribute="width" secondItem="hOa-Nq-tce" secondAttribute="height" multiplier="1:1" id="jgv-Op-Rbh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hOa-Nq-tce" firstAttribute="centerY" secondItem="riH-yL-yrB" secondAttribute="centerY" id="2ux-zk-jdI"/>
+                            <constraint firstItem="VEm-VN-BDV" firstAttribute="width" secondItem="gTw-eo-AQn" secondAttribute="width" id="5ae-cw-lhS"/>
+                            <constraint firstItem="VEm-VN-BDV" firstAttribute="height" secondItem="gTw-eo-AQn" secondAttribute="height" id="7vI-LQ-7HD"/>
+                            <constraint firstItem="gTw-eo-AQn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="EiW-GO-jsc"/>
+                            <constraint firstItem="6Mq-L0-aTN" firstAttribute="centerY" secondItem="riH-yL-yrB" secondAttribute="centerY" id="MJf-z4-923"/>
+                            <constraint firstItem="gTw-eo-AQn" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="MaE-oA-ksU"/>
+                            <constraint firstItem="VEm-VN-BDV" firstAttribute="centerX" secondItem="gTw-eo-AQn" secondAttribute="centerX" id="OSM-Gi-efz"/>
+                            <constraint firstItem="VEm-VN-BDV" firstAttribute="centerY" secondItem="gTw-eo-AQn" secondAttribute="centerY" id="Vuu-6n-LLQ"/>
+                            <constraint firstItem="hOa-Nq-tce" firstAttribute="leading" secondItem="riH-yL-yrB" secondAttribute="trailing" constant="65" id="cNP-fo-Rj4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="riH-yL-yrB" secondAttribute="bottom" constant="18" id="dRb-JT-t5e"/>
+                            <constraint firstItem="riH-yL-yrB" firstAttribute="leading" secondItem="6Mq-L0-aTN" secondAttribute="trailing" constant="68.5" id="mXb-kP-DgC"/>
+                            <constraint firstItem="riH-yL-yrB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oX8-Dh-JgP"/>
+                            <constraint firstItem="gTw-eo-AQn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="r7z-F1-AuU"/>
+                            <constraint firstItem="gTw-eo-AQn" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="sgp-6Y-Z88"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnTakePicture" destination="riH-yL-yrB" id="L99-qp-61V"/>
+                        <outlet property="capturePreviewView" destination="gTw-eo-AQn" id="FPf-tM-dVy"/>
+                        <outlet property="ivMain" destination="VEm-VN-BDV" id="50u-wR-oAN"/>
+                        <outlet property="ivPreview1" destination="6Mq-L0-aTN" id="ODG-l5-WPl"/>
+                        <outlet property="ivPreview2" destination="hOa-Nq-tce" id="f03-xw-YCp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="136"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
