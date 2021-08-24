@@ -121,7 +121,7 @@ class MainViewController: UIViewController {
     }
     
     func combineImages(_ topImage: UIImage, _ bottomImage: UIImage) -> UIImage {
-        var size = CGSize(width: topImage.size.width, height: topImage.size.height)
+        let size = CGSize(width: topImage.size.width, height: topImage.size.height)
         UIGraphicsBeginImageContext(size)
         
         let areaSize = CGRect(x: 0, y: 0, width: size.width, height: size.height)
@@ -129,7 +129,7 @@ class MainViewController: UIViewController {
         
         topImage.draw(in: areaSize, blendMode: .multiply, alpha: 1)
         
-        var newImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        let newImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         return newImage
     }

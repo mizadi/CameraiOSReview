@@ -15,7 +15,6 @@
 		F44A6DB2248817FE000502E5 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44A6DB1248817FE000502E5 /* CameraController.swift */; };
 		F44A6DB424881AF3000502E5 /* ApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44A6DB324881AF3000502E5 /* ApiHandler.swift */; };
 		F44A6DB624881C58000502E5 /* ImagesHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44A6DB524881C58000502E5 /* ImagesHolder.swift */; };
-		F46EB69E26D56FBC002505AF /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46EB69D26D56FBC002505AF /* MainPresenter.swift */; };
 		F46EB6A426D570B6002505AF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F46EB6A326D570B6002505AF /* README.md */; };
 		F7240126099A29700ABFD370 /* Pods_iOSReviewExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A26A7839DB3F9569E3089C2 /* Pods_iOSReviewExam.framework */; };
 /* End PBXBuildFile section */
@@ -34,7 +33,6 @@
 		F44A6DB1248817FE000502E5 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		F44A6DB324881AF3000502E5 /* ApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandler.swift; sourceTree = "<group>"; };
 		F44A6DB524881C58000502E5 /* ImagesHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesHolder.swift; sourceTree = "<group>"; };
-		F46EB69D26D56FBC002505AF /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		F46EB6A326D570B6002505AF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +103,6 @@
 			children = (
 				F46EB6A226D5702C002505AF /* Images */,
 				F44A6DA12488170C000502E5 /* MainViewController.swift */,
-				F46EB69D26D56FBC002505AF /* MainPresenter.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -260,7 +257,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F44A6DA22488170C000502E5 /* MainViewController.swift in Sources */,
-				F46EB69E26D56FBC002505AF /* MainPresenter.swift in Sources */,
 				F44A6D9E2488170C000502E5 /* AppDelegate.swift in Sources */,
 				F44A6DB424881AF3000502E5 /* ApiHandler.swift in Sources */,
 				F44A6DB2248817FE000502E5 /* CameraController.swift in Sources */,
